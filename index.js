@@ -21,7 +21,7 @@ function formatNum (number, opts) {
   opts = renameKeyShortcuts(Object.assign({}, defaultOptions, opts))
   number = parseNum(number)
 
-  if (Number.isNaN(number)) {
+  if (isNaN(number)) {
     if (opts.nanZero === false) return 'NaN'
     else number = 0
   }
