@@ -63,6 +63,7 @@ Related
 
 - [parse-num](https://github.com/ExodusMovement/parse-num): Parse anything into a number. A dependency
 of this library.
+- [number-unit](https://github.com/ExodusMovement/number-unit): Numbers with units. Easily convert numbers to from different units.
 
 
 License
