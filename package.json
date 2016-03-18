@@ -31,7 +31,7 @@
   "dependencies": {
     "parse-num": "^1.0.0"
   },
-  "devDependendies": {
+  "devDependencies": {
     "ava": "0.13.x",
     "standard": "5.x"
   }
