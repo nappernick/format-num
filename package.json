@@ -32,6 +32,7 @@
     "parse-num": "^1.0.0"
   },
   "devDependendies": {
+    "ava": "13.x",
     "standard": "5.x"
   }
 }
