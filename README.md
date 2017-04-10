@@ -11,7 +11,7 @@ format-num
 Install
 -------
 
-    npm install --save `format-num`
+    npm install --save format-num
 
 
 Notes
