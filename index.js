@@ -41,15 +41,12 @@ const renameKeyShortcuts = (opts) => {
   return opts
 }
 
-const expandMin = (opts, key) => {
-  if (!key.includes('minimum') && key.startsWith('min')) {
-    replaceKey(opts, key, key.replace('min', 'minimum'))
-  }
-}
+const expandMin = (opts, key) => expand(opts, key, 'min', 'minimum')
+const expandMax = (opts, key) => expand(opts, key, 'max', 'maximum')
 
-const expandMax = (opts, key) => {
-  if (!key.includes('maximum') && key.startsWith('max')) {
-    replaceKey(opts, key, key.replace('max', 'maximum'))
+const expand = (opts, key, shorthand, full) => {
+  if (!key.includes(full) && key.startsWith(shorthand)) {
+    replaceKey(opts, key, key.replace(shorthand, full))
   }
 }
 
