@@ -1,7 +1,7 @@
 import test from 'ava'
 import formatNumber from '../'
 
-test('edge cases', function (t) {
+test('edge cases', (t) => {
   t.is(formatNumber(NaN), '0', 'NaN => 0')
   t.is(formatNumber(NaN, { nanZero: false }), 'NaN', 'NaN => NaN')
   t.is(formatNumber(NaN, { minFraction: 2, maxFraction: 2 }), '0.00', '0 => 0.00 (min, max)')
@@ -13,7 +13,7 @@ test('edge cases', function (t) {
   t.is(formatNumber(null), '0', 'null => 0')
 })
 
-test('format numbers', function (t) {
+test('format numbers', (t) => {
   t.is(formatNumber(0), '0', '0 => 0')
   t.is(formatNumber(10000000.15), '10,000,000.15', '10000000.15 => 10,000,000.15')
   t.is(formatNumber(1.00000004), '1.00000004', '1.00000004 => 1.00000004')
