@@ -36,9 +36,7 @@ const renameKeyShortcuts = (opts) => {
     expandMax(opts, key)
   })
 
-  Object.keys(opts).forEach((key) => {
-    addDigits(opts, key)
-  })
+  Object.keys(opts).forEach((key) => addDigits(opts, key))
 
   return opts
 }
