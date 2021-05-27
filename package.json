@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "standard",
     "test": "npm run lint && npm run unit",
-    "unit": "ava --verbose"
+    "unit": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,9 +29,12 @@
   },
   "homepage": "https://github.com/exodusmovement/format-num#readme",
   "dependencies": {
+    "babel-jest": "^27.0.1",
     "parse-num": "^1.0.0"
   },
   "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-jest": "^24.3.6",
     "jest": "^27.0.1",
     "standard": "6.x"
   }
